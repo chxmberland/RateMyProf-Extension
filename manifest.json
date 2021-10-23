@@ -4,7 +4,11 @@
     "name": "RateMyProfs Mcgill",
     "description": "Chrome extension that directly links a professor's ratemyprofessors.com page in McGill course websites.",
     "version": "1.0",
-  
+
+    "web_accessible_resources": [
+      "bird.png"
+    ],
+
     "icons": {
       "128": "icon.png"
     },

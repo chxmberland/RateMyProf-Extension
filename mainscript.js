@@ -97,6 +97,13 @@ if (document.location.href.includes("mcgill.ca")) {
         var toRemove = document.getElementsByClassName('catalog-instructors');
         toRemove[0].parentNode.removeChild(toRemove[0]);
 
+        //Adding a div to hold an image
+        var imgNode = document.createElement('div');
+        imgNode.className = 'bird-img-holder';
+        var img = document.createElement('img');
+        img.src = chrome.runtime.getURL('./bird.png');
+        imgNode.appendChild(img);
+
         //Getting the div to append to
         var parentNode = document.getElementsByClassName('node-catalog')[0];
 
@@ -104,19 +111,27 @@ if (document.location.href.includes("mcgill.ca")) {
         var profNode = document.createElement('div');
         profNode.className = 'instructors-node';
 
-        //Appending text to the div
-        var titleText = document.createElement('p');
-        titleText.className = 'instructors-node-title';
-        titleText.innerHTML = "Click on the instructors name to find their RateMyProfessor score!";
+        //Creating a banner for the div
+        var banner = document.createElement('div');
+        banner.className = 'instructor-node-banner';
 
-        var text = document.createElement('p');
+        //Creating a node to hold the title
+        var titleText = document.createElement('div');
+        titleText.className = 'instructors-node-title';
+        titleText.innerHTML = "Click on an instructors name to find their RateMyProfessor score!";
+
+        //Creating a node to hold the instructors names
+        var text = document.createElement('div');
         text.className = 'instructors-names';
         text.innerHTML = newInstructorsStr;
 
+        //Appedding everything to the node
+        profNode.appendChild(banner);
         profNode.appendChild(titleText);
         profNode.appendChild(text);
 
         //Injecting the new div onto the page
+        parentNode.appendChild(imgNode);
         parentNode.appendChild(profNode);
 
     }

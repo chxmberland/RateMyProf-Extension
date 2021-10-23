@@ -1,18 +1,42 @@
+.bird-img-holder {
+    padding-left: 70%;
+}
+
+img {
+    width: 60%;
+    height: auto;
+}
+
 .instructors-node {
-    margin-top: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
     border-radius: 15px;
     background: rgb(236, 236, 236);
-    box-sizing: border-box;
+    box-shadow: 2px 3px 8px #919191;
     position: relative;
     top: 0;
     transition: 0.1s ease-in;
 }
 
+.instructor-node-banner {
+    background: red;
+    height: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-bottom: 15px;
+}
+
 .instructors-node:hover {
     top: -2px;
     box-shadow: 2px 3px 8px #919191;
+}
+
+.instructors-node-title {
+    padding-left: 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.instructors-names {
+    padding-left: 15px;
 }
