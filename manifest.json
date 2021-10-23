@@ -17,7 +17,8 @@
     "content_scripts": [
         {
           "matches": ["*://www.mcgill.ca/study/*/courses/*", "*://www.ratemyprofessors.com/*"],
-          "js": ["jquery.js", "mainscript.js"]
+          "js": ["jquery.js", "mainscript.js"],
+          "css": ["index.css"]
         }
       ]
   }
