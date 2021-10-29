@@ -105,7 +105,7 @@ if (document.location.href.includes("mcgill.ca")) {
         imgNode.appendChild(img);
 
         //Getting the div to append to
-        var parentNode = document.getElementsByClassName('node-catalog')[0];
+        var parentNode = document.getElementsByClassName('catalog-terms')[0];
 
         //Creating a new div that holds the instructors names
         var profNode = document.createElement('div');
