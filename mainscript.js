@@ -63,7 +63,7 @@ if (document.location.href.includes("mcgill.ca")) {
 
         //Adding links to the names to be injected
         for (l = 0; l < nameIndices.length; l++) {
-            str = "<a href=\"" + urlArray[l] + "<a href=\"" + "\">" + instArray[nameIndices[l]]+", "+instArray[nameIndices[l]+1] +  "</a>";
+            str = "<a href=\"" + urlArray[l] + "\">" + instArray[nameIndices[l]] + ", " + instArray[nameIndices[l] + 1] +  "</a>";
             instructorHyperLinks.push(str);
         }
 
