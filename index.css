@@ -44,3 +44,11 @@ img {
     top: -3px;
     box-shadow: 2px 3px 8px #919191;
 }
+
+#popup-body { 
+    height: 150px;
+    width: 150px;
+    margin: 0px;
+    padding: 20px;
+    border: 0px;
+}
