@@ -102,6 +102,7 @@ if (document.location.href.includes("mcgill.ca")) {
         imgNode.className = 'bird-img-holder';
         var img = document.createElement('img');
         img.src = chrome.runtime.getURL('./bird.png');
+        img.className = 'bird-img';
         imgNode.appendChild(img);
 
         //Getting the div to append to

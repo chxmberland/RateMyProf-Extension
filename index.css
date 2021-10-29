@@ -5,6 +5,9 @@
 img {
     width: 60%;
     height: auto;
+}
+
+.bird-img {
     margin: 0px;
 }
 
@@ -15,20 +18,16 @@ img {
     background: rgb(236, 236, 236);
     box-shadow: 2px 3px 8px #919191;
     position: relative;
+    top: 0;
     transition: 0.1s ease-in;
 }
 
 .instructor-node-banner {
-    background: red;
+    background: #EC2227;
     height: 10px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     margin-bottom: 15px;
-}
-
-.instructors-node:hover {
-    top: -2px;
-    box-shadow: 2px 3px 8px #919191;
 }
 
 .instructors-node-title {
@@ -39,4 +38,9 @@ img {
 
 .instructors-names {
     padding-left: 15px;
+}
+
+.instructors-node:hover {
+    top: -3px;
+    box-shadow: 2px 3px 8px #919191;
 }
